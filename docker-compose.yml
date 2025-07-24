@@ -1,0 +1,19 @@
+version: '3.8'
+
+services:
+  wordpress:
+    image: wordpress:6.8.2-php8.3-apache
+    container_name: wplite-wordpress
+    ports:
+      - "8080:80"
+    environment:
+      WORDPRESS_DB_HOST: null
+      WORDPRESS_DB_USER: null
+      WORDPRESS_DB_PASSWORD: null
+      WORDPRESS_DB_NAME: null
+    volumes:
+      - ./wp-content:/var/www/html/wp-content
+      - ./data:/var/www/html/wp-content/database
+      - ./scripts/wp-config.php:/var/www/html/wp-config.php
+      - ./scripts/db.php:/var/www/html/wp-content/db.php
+    restart: unless-stopped 

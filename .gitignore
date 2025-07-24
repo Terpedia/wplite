@@ -1,0 +1,49 @@
+# WordPress Core
+wp-admin/
+wp-includes/
+*.log
+wp-config-local.php
+
+# SQLite Database
+data/
+*.db
+*.sqlite
+
+# WordPress Content - Allow structure but ignore uploads
+wp-content/uploads/
+wp-content/upgrade/
+wp-content/backup-db/
+wp-content/backups/
+wp-content/blogs.dir/
+wp-content/cache/
+wp-content/upgrade/
+wp-content/updraft/
+wp-content/backupwordpress-*/
+wp-content/managewp/
+wp-content/w3tc-config/
+wp-content/cache/
+
+# Keep plugins and themes structure but can be selective
+# wp-content/plugins/*
+# !wp-content/plugins/sqlite-database-integration/
+# wp-content/themes/*
+# !wp-content/themes/your-custom-theme/
+
+# OS Files
+.DS_Store
+Thumbs.db
+
+# Editor Files
+*.swp
+*.swo
+*~
+.idea/
+.vscode/
+
+# Docker
+.env
+
+# Temporary files
+*.tmp
+*.temp
+*.cache 
