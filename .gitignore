@@ -29,6 +29,11 @@ wp-content/cache/
 # wp-content/themes/*
 # !wp-content/themes/your-custom-theme/
 
+# Replit specific
+.replit
+.replit.nix
+.replitignore
+
 # OS Files
 .DS_Store
 Thumbs.db
@@ -40,10 +45,8 @@ Thumbs.db
 .idea/
 .vscode/
 
-# Docker
-.env
-
 # Temporary files
 *.tmp
 *.temp
-*.cache 
+*.cache
+wordpress.zip 
